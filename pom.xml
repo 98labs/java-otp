@@ -4,7 +4,7 @@
 
     <groupId>com.with98labs</groupId>
     <artifactId>java-otp</artifactId>
-    <version>0.3.2-SNAPSHOT</version>
+    <version>0.3.1-SNAPSHOT</version>
     <name>java-otp</name>
     <description>A one-time password (HOTP and TOTP) library for Java</description>
     <inceptionYear>2016</inceptionYear>
@@ -75,11 +75,11 @@
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
             <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
 
@@ -239,7 +239,7 @@
                     <localCheckout>true</localCheckout>
                     <pushChanges>false</pushChanges>
                     <mavenExecutorId>forked-path</mavenExecutorId>
-                    <arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments>
+                    <arguments>-Dgpg.passphrase===01_garden_TRUE_verb_47==</arguments>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -248,6 +248,11 @@
                         <version>1.9.5</version>
                     </dependency>
                 </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
             </plugin>
         </plugins>
     </build>
@@ -266,7 +271,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.0.1</version>
+                        <version>1.6</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
