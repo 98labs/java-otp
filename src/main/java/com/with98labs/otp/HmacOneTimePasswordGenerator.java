@@ -32,7 +32,7 @@ import java.util.Locale;
  * <p>Generates HMAC-based one-time passwords (HOTP) as specified in
  * <a href="https://tools.ietf.org/html/rfc4226">RFC&nbsp;4226</a>.</p>
  *
- * <p>{@code HmacOneTimePasswordGenerator} instances are thread-safe and may be shared between threads.</p>
+ * <p>{@code com.with98labs.otp.HmacOneTimePasswordGenerator} instances are thread-safe and may be shared between threads.</p>
  *
  * @author <a href="https://github.com/jchambers">Jon Chambers</a>
  */
@@ -57,10 +57,10 @@ public class HmacOneTimePasswordGenerator {
 
     /**
      * Creates a new HMAC-based one-time password (HOTP) generator using a default password length
-     * ({@value HmacOneTimePasswordGenerator#DEFAULT_PASSWORD_LENGTH} digits).
+     * ({@value com.with98labs.otp.HmacOneTimePasswordGenerator#DEFAULT_PASSWORD_LENGTH} digits).
      *
      * @throws NoSuchAlgorithmException if the underlying JRE doesn't support the
-     * {@value HmacOneTimePasswordGenerator#HOTP_HMAC_ALGORITHM} algorithm, which should never
+     * {@value com.with98labs.otp.HmacOneTimePasswordGenerator#HOTP_HMAC_ALGORITHM} algorithm, which should never
      * happen except in cases of serious misconfiguration
      */
     public HmacOneTimePasswordGenerator() throws NoSuchAlgorithmException {
@@ -74,7 +74,7 @@ public class HmacOneTimePasswordGenerator {
      * 6 and 8, inclusive
      *
      * @throws NoSuchAlgorithmException if the underlying JRE doesn't support the
-     * {@value HmacOneTimePasswordGenerator#HOTP_HMAC_ALGORITHM} algorithm, which should never
+     * {@value com.with98labs.otp.HmacOneTimePasswordGenerator#HOTP_HMAC_ALGORITHM} algorithm, which should never
      * happen except in cases of serious misconfiguration
      */
     public HmacOneTimePasswordGenerator(final int passwordLength) throws NoSuchAlgorithmException {
@@ -89,7 +89,7 @@ public class HmacOneTimePasswordGenerator {
      * @param passwordLength the length, in decimal digits, of the one-time passwords to be generated; must be between
      * 6 and 8, inclusive
      * @param algorithm the name of the {@link javax.crypto.Mac} algorithm to use when generating passwords; note that
-     * HOTP only allows for {@value HmacOneTimePasswordGenerator#HOTP_HMAC_ALGORITHM}, but derived
+     * HOTP only allows for {@value com.with98labs.otp.HmacOneTimePasswordGenerator#HOTP_HMAC_ALGORITHM}, but derived
      * standards like TOTP may allow for other algorithms
      *
      * @throws NoSuchAlgorithmException if the given algorithm is not supported by the underlying JRE
