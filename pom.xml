@@ -2,31 +2,31 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.eatthepath</groupId>
+    <groupId>com.with98labs</groupId>
     <artifactId>java-otp</artifactId>
     <version>0.3.1-SNAPSHOT</version>
     <name>java-otp</name>
     <description>A one-time password (HOTP and TOTP) library for Java</description>
     <inceptionYear>2016</inceptionYear>
-    <url>https://github.com/jchambers/java-otp</url>
+    <url>https://github.com/98labs/java-otp</url>
 
     <scm>
-        <connection>scm:git:https://github.com/jchambers/java-otp.git</connection>
-        <developerConnection>scm:git:git@github.com:jchambers/java-otp.git</developerConnection>
-        <url>https://github.com/jchambers/java-otp</url>
+        <connection>scm:git:https://github.com/98labs/java-otp</connection>
+        <developerConnection>scm:git:git@github.com:98labs/java-otp.git</developerConnection>
+        <url>https://github.com/98labs/java-otp</url>
       <tag>HEAD</tag>
   </scm>
 
     <developers>
         <developer>
-            <id>jon</id>
-            <name>Jon Chambers</name>
-            <email>jon.chambers@gmail.com</email>
-            <url>https://github.com/jchambers</url>
+            <id>98LABS</id>
+            <name>98LABSs</name>
+            <email>info@98labs.com</email>
+            <url>https://github.com/98labs</url>
             <roles>
                 <role>developer</role>
             </roles>
-            <timezone>-5</timezone>
+            <timezone>+8</timezone>
         </developer>
     </developers>
 
@@ -160,7 +160,7 @@
                 <configuration>
                     <archive>
                         <manifestEntries>
-                            <Automatic-Module-Name>com.eatthepath.otp</Automatic-Module-Name>
+                            <Automatic-Module-Name>com.with98labs.otp</Automatic-Module-Name>
                         </manifestEntries>
                     </archive>
                     <excludes>

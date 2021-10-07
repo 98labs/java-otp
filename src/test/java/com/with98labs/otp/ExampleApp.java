@@ -18,7 +18,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE. */
 
-package com.eatthepath.otp;
+package com.with98labs.otp;
 
 import javax.crypto.KeyGenerator;
 import java.security.InvalidKeyException;
