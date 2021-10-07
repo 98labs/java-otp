@@ -8,3 +8,5 @@ _site
 #ignore intellij files
 *.iml
 .idea/
+pom.xml.releaseBackup
+release.properties
