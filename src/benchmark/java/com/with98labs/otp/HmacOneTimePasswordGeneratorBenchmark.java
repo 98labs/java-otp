@@ -1,4 +1,4 @@
-package com.eatthepath.otp;
+package com.with98labs.otp;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Scope;
